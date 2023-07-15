@@ -10,8 +10,12 @@ WORKDIR /tmp/
 
 RUN mvn package
 
+#pull base image
+
+FROM eclipse-temurin:11
+
 #maintainer 
-MAINTAINER jarsigan.2014@gmail.com
+MAINTAINER dstar55@yahoo.com
 #expose port 8080
 EXPOSE 8080
 
